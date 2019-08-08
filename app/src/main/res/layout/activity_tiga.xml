@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/latihan_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="#5352ed">
+
+        <RelativeLayout
+            android:id="@+id/imageParent"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#3742fa"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_foreground" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageParent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Nama"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="#0be881"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+
+        <EditText
+            android:id="@+id/re-password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Lanjut Activity 4"
+            android:id="@+id/button_empat"/>
+
+    </LinearLayout>
+
+</LinearLayout>

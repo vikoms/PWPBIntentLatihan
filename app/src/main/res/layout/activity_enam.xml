@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9ff3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/art_clear" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wheater Apps"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="13pt"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="#f368e0">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="30dp">
+
+            <TextView
+                android:layout_marginTop="33dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today, April 13"
+                android:textColor="#80ffffff"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26°"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:textSize="30pt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20°"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/gambarHujan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/art_rain"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/gambarHujan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cloudy"
+                android:textColor="#fff"
+                android:textSize="20pt"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow android:background="#FDA7DF">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/art_clouds"/>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="12.00"
+                android:paddingLeft="20dp"
+                android:textColor="#fff"
+                android:textSize="15pt"/>
+        </TableRow>
+        <TableRow android:background="#FDA7DF">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/art_clouds"/>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:text="13.00"
+                android:paddingLeft="20dp"
+                android:textColor="#fff"
+                android:textSize="15pt"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity Selanjutnya"
+        android:layout_gravity="center"
+        android:id="@+id/button_tujuh"/>
+</LinearLayout>
